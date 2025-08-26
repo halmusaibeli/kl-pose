@@ -424,7 +424,7 @@ ROUTINE pose__set_posreg_xyz_ext
           WRITE TPERROR (CR, 'position register must be > 0')
           ok = FALSE
       ELSE
-          SET_POS_REG(reg_no, (pose_in), STATUS, grp_no)
+          SET_EPOS_REG(reg_no, (pose_in), STATUS, grp_no)
           CHK_STAT(STATUS)
           IF (STATUS <> 0) THEN
               ok = FALSE
